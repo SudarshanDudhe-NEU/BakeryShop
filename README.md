@@ -2,6 +2,16 @@
 
 BakeryShop is a Django-based web application designed to manage bakery products, sales, and customer interactions. It provides an intuitive interface for displaying bakery products, their prices, and detailed descriptions, allowing customers to browse and place orders seamlessly.
 
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Admin Panel](#admin-panel)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+
 ## Features
 
 - **Product Management**: Easily manage bakery products with detailed descriptions and images.
