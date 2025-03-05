@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 from pages.views import home, about, contact  # Import the additional views
 from products import views as product_views
 
@@ -29,3 +33,8 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),
 ]
+
+# Serve media files during development (in debug mode)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
