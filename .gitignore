@@ -3,6 +3,8 @@
 *.pyo
 *.pyd
 *__pycache__
+'*.pyc'
+'*/__pycache__'
 
 # Django
 *.log
@@ -25,3 +27,4 @@ env/
 # IDEs and editors
 .idea/
 .vscode/
+.DS_Store
