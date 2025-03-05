@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}{{ product.name }} - My Bakery
+{%endblock %} {% block content %}
+<div class="product-detail">
+  <h2>{{ product.name }}</h2>
+  {% if product.image %}
+  <img
+    src="{{ product.image.url }}"
+    alt="{{ product.name }}"
+    class="product-image"
+  />
+  {% endif %}
+  <p><strong>Price:</strong> ${{ product.price }}</p>
+  <p>{{ product.description }}</p>
+  <a href="{% url 'product_list' %}" class="back-button">← Back to Products</a>
+</div>
+{% endblock %}
